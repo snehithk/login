@@ -11,7 +11,7 @@
 
 <!-- Left Early -->
 <h3>Left Early</h3>
-<p ng-show="!leftEarly.length">No students.</p>
+<p ng-show="!leftEarly.length">No one left early.</p>
 <ul>
     <li ng-repeat="student in leftEarly = (students | filter: {signedIn: true, signedOut: true})">
         {{ student.name }}
@@ -20,7 +20,7 @@
 
 <!-- No Show -->
 <h3>No-show</h3>
-<p ng-show="!notHere.length">No students.</p>
+<p ng-show="!notHere.length">Everyone is here!?!?!</p>
 <ul>
     <li ng-repeat="student in notHere = (students | filter: {signedIn: false, signedOut: false})" class="student-list-item">
         {{ student.name }}
