@@ -1,4 +1,4 @@
-var attendence = angular.module('signIn', ['ui.router']);
+var attendance = angular.module('signIn', ['ui.router']);
 
 signIn.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state('home', {
