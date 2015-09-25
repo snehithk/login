@@ -1,26 +1,19 @@
 <!DOCTYPE html>
-<html ng-app="signIn">
+<html ng-app="attendance">
 <head>
     <meta charset="UTF-8">
     <title>Epicodus | login</title>
     <script src="lib/angular.js"></script>
     <script src="lib/angular-ui-router.js"></script>
     <script src="app.js"></script>
-    <script src="services/CoursesFactory.js"></script>
-    <script src="services/StudenFactory.js"></script>
-    <script src="controllers/HereController.js"></script>
-    <script src="controllers/StudentsController.js"></script>
+    <script src="services/StudentsFactory.js"></script>
+    <script src="controllers/TeacherCtrl.js"></script>
+    <script src="controllers/StudentsCtrl.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 </head>
 <body>
     <div class="container">
-        <nav>
-            <ul>
-                <li><a href="#"></a>Login</li>
-                <li><a href="#"></a>Sign-up</li>
-            </ul>
-        </nav>
         <div ui-view></div>
     </div>
 </body>

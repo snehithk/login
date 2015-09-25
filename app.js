@@ -1,22 +1,23 @@
-var attendance = angular.module('signIn', ['ui.router']);
+var attendance = angular.module('attendance', ['ui.router']);
 
-signIn.config(function($stateProvider, $urlRouterProvider) {
+//Sign in partial link
+attendance.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state('home', {
-    url: "",
+    url: '',
     templateUrl: "partials/home.html"
   });
 
   //Make a state that will display a list of students
   //and allow students to sign in.
-  $stateProvider.state('', {
-    url:"/students",
+  $stateProvider.state('students', {
+    url:"/signIn",
     templateUrl:"partials/signIn.html",
     controller: 'StudentsCtrl'
   });
 
   //Make a state for the instructor to see who is here.
-  $stateProvider.state('', {
-    url: "/teacher",
+  $stateProvider.state('teacher', {
+    url: "/whoIsHere",
     templateUrl: "partials/whoIsHere.html",
     controller: 'TeacherCtrl'
   });
