@@ -1,7 +1,7 @@
-<h1>Roster</h1>
-    <ul>
+<h1 class="jumbotron">Roster</h1>
+    <ul class="list-group">
         <!-- Go through the factory of students and loop through them, displaying their name with a sign in and out button. As well as make that click work -->
-        <li ng-repeat="student in students | orderBy:'name'">
+        <li class="list-group-item" ng-repeat="student in students | orderBy:'name'">
             {{ student.name }}
             <span ng-show="!student.signedIn && !student.signedOut">
                 <button type="button" class="btn btn-default btn-sm btn-sign-in" ng-click="signIn(student)">Sign in</button>

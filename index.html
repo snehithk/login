@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 </head>
 <body>
+    <nav class="navbar navbar-default nav-pills navbar-fixed-top">
+            <ul class="nav nav-tabs">
+                <li role="presentation" ui-sref-active="active"><a ui-sref="home">Home</a></li>
+                <li role="presentation" ui-sref-active="active"><a ui-sref="students">Students</a></li>
+                <li role="presentation" ui-sref-active="active"><a ui-sref="teacher">Teacher</a></li>
+            </ul>
+		</nav>
     <div class="container">
         <div ui-view></div>
     </div>
