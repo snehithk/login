@@ -1,10 +1,10 @@
-<h1>Attendance</h1>
+<h1 class="jumbotron">Attendance</h1>
 
 <!-- Handle people who show up -->
 <h3>Here</h3>
 <p ng-show="!here.length">No one is here....</p>
-<ul>
-    <li ng-repeat="student in here = (students | filter: {signedIn: true, signedOut: false})">
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="student in here = (students | filter: {signedIn: true, signedOut: false})">
         {{ student.name }}
     </li>
 </ul>
@@ -12,8 +12,8 @@
 <!-- Left Early -->
 <h3>Left Early</h3>
 <p ng-show="!leftEarly.length">No one left early.</p>
-<ul>
-    <li ng-repeat="student in leftEarly = (students | filter: {signedIn: true, signedOut: true})">
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="student in leftEarly = (students | filter: {signedIn: true, signedOut: true})">
         {{ student.name }}
     </li>
 </ul>
@@ -21,8 +21,8 @@
 <!-- No Show -->
 <h3>No-show</h3>
 <p ng-show="!notHere.length">Everyone is here!?!?!</p>
-<ul>
-    <li ng-repeat="student in notHere = (students | filter: {signedIn: false, signedOut: false})" class="student-list-item">
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="student in notHere = (students | filter: {signedIn: false, signedOut: false})" class="student-list-item">
         {{ student.name }}
     </li>
 </ul>
